@@ -1,0 +1,43 @@
+#include<stdio.h>
+#include<math.h>
+
+int main()
+{
+    int n;int a;
+    int d=0;int flag=0;int m;
+	int c[20];int e=0;int f;int q;
+    while(scanf("%d",&n) && n!=0 )
+    {
+
+        for(a=1;a<=n;a++)
+        {
+        for(m=2;m<a;m++)
+        {
+            if(a%m==0)
+            {
+			 flag=0;
+             break;
+			}
+			else
+			{
+				flag=1;
+
+			}
+
+		}
+		if(flag==1)d++;
+
+		}
+		c[e]=d+1;
+		e++;
+
+		d=0;
+    }
+    c[0]=0;
+	for(f=0;f<e;f++)
+	{
+		printf("%d\n",c[f]);
+	}
+
+    return 0;
+}
